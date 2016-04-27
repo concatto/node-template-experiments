@@ -1,0 +1,11 @@
+html
+  head
+    title Engine test
+    link(rel='stylesheet', href='style.css')
+  body
+    - var lines = arquivo.split("\n");
+    each line in lines
+      p=line
+    select(style="padding:10px", class="teste")
+      each estado in estados
+        option(value=estado.id)=estado.nome
